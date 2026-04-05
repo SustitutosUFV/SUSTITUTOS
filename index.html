@@ -199,14 +199,26 @@ text-align: left;
 .tabla-equipo tr:hover {
     background-color: rgba(255, 255, 255, 0.05); 
 }
-pre.guion-texto {
+.guion-texto {
     font-family: 'Courier New', Courier, monospace; 
-    white-space: pre-wrap; 
     font-size: 15px; 
-    line-height: 2.5; 
+    line-height: 1.5; 
     text-align: left; 
     margin: 20px auto 0 auto; 
-    max-width: 600px; 
+    max-width: 800px; 
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 10px;
+}
+.accion {
+    white-space: pre-wrap;
+    margin-bottom: 20px;
+}
+.dialogo {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 20px auto;
+    white-space: pre-wrap;
 }
 </style>
 </head>
@@ -277,20 +289,17 @@ pre.guion-texto {
 
 <div id="contenido-guion" style="display:none;">
     <h2>GUION</h2>
-<pre class="guion-texto">
-<b>1. EXT. UNIVERSIDAD- DÍA</b>
-Es una tarde de lunes cualquiera, JAVIER (21) va caminando
-de camino a clase por el campus cuando ve unos metros más
-adelante a sus mejores amigos, LUCÍA (21) y LUKA (21)
-esperándole mientras charlan. Javier llega a donde están
-ellos y les saluda mientras les choca los cinco.
+<div class="guion-texto">
 
-<b>JAVIER</b>
+<div class="accion"><b>1. EXT. UNIVERSIDAD- DÍA</b>
+Es una tarde de lunes cualquiera, JAVIER (21) va caminando de camino a clase por el campus cuando ve unos metros más adelante a sus mejores amigos, LUCÍA (21) y LUKA (21) esperándole mientras charlan. Javier llega a donde están ellos y les saluda mientras les choca los cinco.</div>
+
+<div class="dialogo"><b>JAVIER</b>
 (animado)
 ¡Buenos días chicos! ¿Cómo vais?
-¿Qué tal vuestro finde?
+¿Qué tal vuestro finde?</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 (muy feliz)
 Pues bastante bien la verdad. El
 sábado estuve recogiendo mi
@@ -298,28 +307,28 @@ habitación y actualizando mi diario
 como todos los sábados, y el
 domingo estuve pintando un poco en
 mi jardín mientras veía las nubes
-pasar, estuvo muy bien.
+pasar, estuvo muy bien.</div>
 
-<b>JAVIER</b>
-Suena muy bien sí ¿Y tú Lucía?
+<div class="dialogo"><b>JAVIER</b>
+Suena muy bien sí ¿Y tú Lucía?</div>
 
-<b>LUCÍA</b>
+<div class="dialogo"><b>LUCÍA</b>
 (muy feliz también)
 Pues yo estuve todo el finde
 haciendo deberes y pasando a limpio
 los apuntes,y bueno, esperando que
 fuese lunes para poder volver a
-clase la verdad
+clase la verdad</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 Jo que buen finde has tenido tu
-también
+también</div>
 
-<b>LUKA Y LUCÍA</b>
+<div class="dialogo"><b>LUKA Y LUCÍA</b>
 (Al unísono)
-¿Y tú Javi?
+¿Y tú Javi?</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 Pues yo he estado todo el finde
 mirando ofertas de trabajo para,
 como os decía el otro día, mirar
@@ -327,165 +336,147 @@ donde currar ahora cuando
 terminemos la carrera. Pero he sido
 incapaz de decidirme porque todas
 me parecían maravillosas, ojála lo
-tuviese tan claro como vosotros
+tuviese tan claro como vosotros</div>
 
-<b>LUCÍA</b>
+<div class="dialogo"><b>LUCÍA</b>
 Seguro que encuentras el trabajo
-perfecto, tu confía
+perfecto, tu confía</div>
 
-Javier afirma sonriendo. Los tres retoman la marcha pero un
-CHICO se choca decabeza contra Javier
+<div class="accion">Javier afirma sonriendo. Los tres retoman la marcha pero un CHICO se choca decabeza contra Javier</div>
 
-<b>CHICO</b>
-Uy, perdón Javier
+<div class="dialogo"><b>CHICO</b>
+Uy, perdón Javier</div>
 
-El CHICO se disculpa mientras le da la mano, está mirando
-hacia abajo y no vemos su cara.
+<div class="accion">El CHICO se disculpa mientras le da la mano, está mirando hacia abajo y no vemos su cara.</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 No pasa nada tranquilo. Oye, me
 estás haciendo daño ¿Podrías
-soltarme?
+soltarme?</div>
 
-<b>CHICO</b>
+<div class="dialogo"><b>CHICO</b>
 Ah, si claro, perdón, no sabía que
 eras capaz de sentir dolor...
 Bueno, perdón otra vez ¡adiós
-Javier!
+Javier!</div>
 
-El CHICO se va caminando con la cabeza bajada, nunca
-llegamos a ver correctamente su rostro.
+<div class="accion">El CHICO se va caminando con la cabeza bajada, nunca llegamos a ver correctamente su rostro.</div>
 
-<b>LUCÍA</b>
-¿Estás bien?
+<div class="dialogo"><b>LUCÍA</b>
+¿Estás bien?</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 Si, me ha dolido más el apretón que
-el choque jajaja
+el choque jajaja</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 Si es que con ese cabezón normal
-jajajaj
+jajajaj</div>
 
-<b>LUCÍA</b>
+<div class="dialogo"><b>LUCÍA</b>
 Oye ¿Ese chico no era el nuevo
-alumno de la otra clase?
+alumno de la otra clase?</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 Ni idea la verdad ¿Tú sabes quién
-es Luka?
+es Luka?</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 Sí, es un chico bastante rarillo la
 verdad, pero seguro que es buena
 persona en el fondo. En fin como os
 iba diciendo, tengo muchas ganas de
 empezar el nuevo tema de
-literatura...
+literatura...</div>
 
-Los tres siguen caminando por la universidad de camino a
-clase
+<div class="accion">Los tres siguen caminando por la universidad de camino a clase
 
 <b>2. INT. CLASE-NOCHE</b>
-Suena el timbre del fin de las clases, LUCÍA y LUKA se
-levantan y se ponen a recoger sus cosas para irse, pero
-Javier, que está sentado entre los dos no se mueve. Ambos le
-miran extrañados
+Suena el timbre del fin de las clases, LUCÍA y LUKA se levantan y se ponen a recoger sus cosas para irse, pero Javier, que está sentado entre los dos no se mueve. Ambos le miran extrañados</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 Tierra llamando a Javi ¿No has oído
 el timbre? Hay que irse a casa. A
 ver si ese choque te ha dejado
-tonto jajaja
+tonto jajaja</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 Ah, si, si, perdón me he
-desconectado jajaja
+desconectado jajaja</div>
 
-<b>LUCÍA</b>
-¿Todo bien?
+<div class="dialogo"><b>LUCÍA</b>
+¿Todo bien?</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 Si... Es sólo que... Estaba
 pensando que, el año que viene tal
 vez no nos veamos, porque Luka se
 va a trabajar a Italia y tú Lucía
 entre la mudanza y las prácticas,
-no vamos a poder verte...
+no vamos a poder verte...</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 (tono de broma)
-¿Y cuál es el problema?
+¿Y cuál es el problema?</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 Nada... Solo que...Me preocupa que
 ahora que cada uno se va por un
 camino nos comencemos a ver menos y
 menos, ya sea por no tener tiempo o
-por la distancia...
+por la distancia...</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 ¿En serio esa era tu preocupación?
 Tío, llevamos siendo mejores amigos
 desde que tengo uso de razón, un
 par de países de distancia no van a
 ser suficiente para que dejemos de
-serlo jajaja
+serlo jajaja</div>
 
-<b>LUCÍA</b>
+<div class="dialogo"><b>LUCÍA</b>
 Estoy con Luka, no te preocupes que
 no te vas a deshacer de nosotros
 tan fácilemente. Es verdad que
 estaremos separados, pero siempre
 podremos sacar tiempo para vernos,
-así que no te rayes por eso
+así que no te rayes por eso</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 Ya... Es verdad, era sólo que temía
 que nos distanciásemos. Pero teneís
-razón,me estaba rayando de más
+razón,me estaba rayando de más</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 Pues ya sabes, menos preocupaciones
 y más recoger, que vamos a llegar
-tarde al bus a este paso
+tarde al bus a este paso</div>
 
-<b>JAVIER</b>
-Yo no jajaja, a mí hoy me recogen
+<div class="dialogo"><b>JAVIER</b>
+Yo no jajaja, a mí hoy me recogen</div>
 
-<b>LUCÍA</b>
-Joe, que morro
+<div class="dialogo"><b>LUCÍA</b>
+Joe, que morro</div>
 
-Los tres se ríen y recogen
+<div class="accion">Los tres se ríen y recogen
 
 <b>3. EXT. UNIVERSIDAD-NOCHE</b>
-JAVIER se despide de LUKA y LUCÍA, que están un par de
-metros delante de él yéndose hacia la parada del bus. JAVIER
-recibe una llamada de teléfono poco después de despedirse de
-sus amigos
+JAVIER se despide de LUKA y LUCÍA, que están un par de metros delante de él yéndose hacia la parada del bus. JAVIER recibe una llamada de teléfono poco después de despedirse de
+sus amigos</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 ¡Hola Papá! Sii, sin problema, yo
 he salido hace nada, ahora te veo,
 voy tirando a la rotonda para que
-me recojas. Chaoo
+me recojas. Chaoo</div>
 
-JAVIER cuelga el teléfono y camina hacia la rotonda que está
-unos metros más adelante. Avanza por el camino, a la derecha
-tiene un edificio de la universidad y a la izquierda una
-pequeña zona con árboles al otro lado de la acera. Algo
-entre los árboles observa a JAVIER caminar. JAVIER se gira
-hacia los árboles pero no ve nada, sigue caminando mientras
-escucha música en su telefóno con unos auriculares. De
-repente, una figura oscura salta hacia él y lo empuja contra
-el suelo haciéndole un derribo.
+<div class="accion">JAVIER cuelga el teléfono y camina hacia la rotonda que está unos metros más adelante. Avanza por el camino, a la derecha tiene un edificio de la universidad y a la izquierda una pequeña zona con árboles al otro lado de la acera. Algo entre los árboles observa a JAVIER caminar. JAVIER se gira hacia los árboles pero no ve nada, sigue caminando mientras escucha música en su telefóno con unos auriculares. De repente, una figura oscura salta hacia él y lo empuja contra el suelo haciéndole un derribo.
 
 <b>4. INT. CASA-DÍA</b>
 Se reproduce la cabecera de un informativo de televisión.
-Una vez terminada, se ve a un presentador en una mesa con
-unos papeles y un ordenador.
+Una vez terminada, se ve a un presentador en una mesa con unos papeles y un ordenador.</div>
 
-<b>PRESENTADOR</b>
+<div class="dialogo"><b>PRESENTADOR</b>
 Últimas noticias, el joven que
 desapareció ayer por la noche ha
 sido hallado sin vida hoy sobre las
@@ -504,26 +495,21 @@ momento no han tenido éxito.
 Además, se ha prohibido el acceso a
 cualquier civil con el fin de
 preservar el escenario lo mejor
-posible para la investigación...
+posible para la investigación...</div>
 
-LUCÍA estaba viendo las noticias desde su teléfono y tras
-escuchar el informe rompe a llorar. Se queda quieta con la
-mirada pérdida y las lágrimas recorriendo su rostro. De
-repente el zumbido de su teléfono la saca del trance. Ella
-se seca las lágrimas y aspira con la nariz los mocos antes
-de cogerlo. Del otro lado de la línea esta LUKA.
+<div class="accion">LUCÍA estaba viendo las noticias desde su teléfono y tras escuchar el informe rompe a llorar. Se queda quieta con la mirada pérdida y las lágrimas recorriendo su rostro. De repente el zumbido de su teléfono la saca del trance. Ella se seca las lágrimas y aspira con la nariz los mocos antes de cogerlo. Del otro lado de la línea esta LUKA.</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 Hola Lucía... ¿Cómo estás llevando
-la noticia?
+la noticia?</div>
 
-<b>LUCÍA</b>
+<div class="dialogo"><b>LUCÍA</b>
 Mal la verdad, me lo he visto ya 4
 veces esperando que mágicamente
 cambie la noticia o digan que era
-todo una broma...pero no pasa
+todo una broma...pero no pasa</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 Ya... no se siente real, ayer le
 vimos y yo ya... En fin, te iba a
 comentar que he hablado con sus
@@ -531,47 +517,37 @@ padres y me han dicho que el
 velatorio será hoy a la hora de
 comer y me han pedido que te lo
 comentase por si querías venir
-también
+también</div>
 
-<b>LUCÍA</b>
-Gracias Luka...Tú vas a ir?
+<div class="dialogo"><b>LUCÍA</b>
+Gracias Luka...Tú vas a ir?</div>
 
-<b>LUKA</b>
+<div class="dialogo"><b>LUKA</b>
 Si...estoy terminando de prepararme
 y ahora saldré con el coche
-¿Quieres que te recoja?
+¿Quieres que te recoja?</div>
 
-<b>LUCÍA</b>
-Sí...por favor...
+<div class="dialogo"><b>LUCÍA</b>
+Sí...por favor...</div>
 
-<b>LUKA</b>
-Pues.. ahora te veo...Chao
+<div class="dialogo"><b>LUKA</b>
+Pues.. ahora te veo...Chao</div>
 
-<b>LUCÍA</b>
-Ahora te veo Luka
+<div class="dialogo"><b>LUCÍA</b>
+Ahora te veo Luka</div>
 
-<b>5. EXT. UNIVERSIDAD-DÍA</b>
-LUKA y LUCÍA se saludan a la distancia y avanzan por la
-universidad, es el mismo camino que días antes habían
-recorrido con JAVIER. Ahora sin él avanzan en silencio,
-ninguno de los dos quiere o se atreve a hablar.
+<div class="accion"><b>5. EXT. UNIVERSIDAD-DÍA</b>
+LUKA y LUCÍA se saludan a la distancia y avanzan por la universidad, es el mismo camino que días antes habían recorrido con JAVIER. Ahora sin él avanzan en silencio, ninguno de los dos quiere o se atreve a hablar.
 
 <b>6. INT. CLASE-TARDE</b>
-LUKA y LUCÍA entran al aula y se sientan en sus sitios, el
-asiento de JAVIER está vacío, pero deciden dejarlo así. Los
-dos miran hacia la pizarra con desgana. Suena el timbre de
-inicio de las clases y de repente los dos se quedan mirando
-a la puerta con cara de pánico. Es una sensación entre
-alegría, miedo e incredulidad. JAVIER entra por la puerta
-sonriente, y mientras se acerca a los LUKA y LUCÍA les habla
+LUKA y LUCÍA entran al aula y se sientan en sus sitios, el asiento de JAVIER está vacío, pero deciden dejarlo así. Los dos miran hacia la pizarra con desgana. Suena el timbre de inicio de las clases y de repente los dos se quedan mirando a la puerta con cara de pánico. Es una sensación entre alegría, miedo e incredulidad. JAVIER entra por la puerta sonriente, y mientras se acerca a los LUKA y LUCÍA les habla</div>
 
-<b>JAVIER</b>
+<div class="dialogo"><b>JAVIER</b>
 ¡Buenos días chicos! ¿Cómo vais?
 
-FIN.
-</pre>
-</div>
+FIN.</div>
 
+</div></div>
 <div id="contenido-equipo" style="display:none;">
     <h2>EQUIPO</h2>
 <table class="tabla-equipo">
