@@ -2,82 +2,372 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Sustitutos - Proyecto transversal</title>
+<title>Sustitutos - Proyecto transversal Grupo 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+   body{
+	background:linear-gradient(135deg,#F2CE24 0%, #AA10B0 100%);
+	background-attachment:fixed;
+	margin:0;
+	padding:0px;
+	font-family:'Press Start 2P';
+	color:white;
+}
+Table{
+	Border-collapse: separate;
+	Border-spacing:15px;
+	width:100%;
+	max-width:100%;
+	margin:-15px auto 0 auto;
+}
+Td{
+	border-radius:20px;
+	padding:30px !important;
+	backdrop-filter:blur(10px);
+	box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+.header-section{
+	background:rgba(170,16,176,0.2);
+	border:2px solid rgba(255,255,255,0.3);
+}
+.nav-bar {
+	displásicas:flex;
+	text-align: left;
+    margin-bottom: 20px;
+}
+.nav-button {
+    background-color: #F2CE24;
+    color: #000;
+    padding: 10px 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+.nav-button:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+}
+.gallery-container {
+        display: grid;
+	grid-template-columns:repeat(3,1fr);
+	gap:20px;
+	justify-items:center;
+	margin-top:30px;
+	width:100%;
+	max-width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.gallery-container img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 12px;
+        transition: transform 0.3s, border-color 0.3s;
+        border: 3px solid transparent;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+    
+.gallery-container img:hover {
+        transform: scale(1.09)translateY(-5px);
+        border-color: #F2CE24;
+}
+    
+.content-section {
+        background: rgba(0, 0, 0, 0.7);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+}
+    
+    h1 {
+        margin: 0;
+	padding-bottom:15px;
+        font-size: 65px;
+        text-shadow: 5px 5px 0px #AA10B0;
+}
+    
+    h2 {
+        color: #F2CE24;
+	margin-top:0;
+        font-size: 20px;
+}
+
+.contact-link {
+        background-color: #F2CE24;
+        color: #000;
+        padding: 12px 25px;
+        text-decoration: none;
+	border-radius:0px;
+        font-size: 10px;
+        Font-weight:bold;
+        transition: 0.3s;
+}
+    
+.contact-link:hover {
+        background-color: white;
+	color:black;
+}
+.celda-boton {
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	backdrop-filter: none !important;
+	padding: 10px 0 !important;
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.9);
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.modal-content {
+	background: none;
+	padding: 0;
+	position:relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor:default;
+}
+.img-ampliada {
+	display: block;
+	border: 5px solid white; 
+	border-radius: 12px;
+	width: auto; 
+	height: auto;
+	max-width: 80vw; 
+	max-height: 80vh; 
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+.text-modal-box {
+	background: rgba(0, 0, 0, 0.9);
+	border: 3px solid #F2CE24;
+	border-radius: 15px;
+	padding: 40px;
+	width: 100vw;
+	max-width: 1200px;
+	max-height: 85vh;
+	overflow-y: auto;
+	color: white;
+	font-family: sans-serif; 
+	line-height: 1.6;
+	font-size: 16px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+.text-modal-box h2 {
+	font-family: 'Press Start 2P';
+	margin-bottom: 20px;
+	text-align: center;
+	color: #F2CE24;
+}
+.tabla-equipo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.tabla-equipo th, .tabla-equipo td {
+    border: 1px solid rgba(242, 206, 36, 0.5); 
+    padding: 15px;
+    text-align: left;
+}
+.tabla-equipo th {
+    background-color: rgba(242, 206, 36, 0.2);
+    color: #F2CE24;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    line-height: 1.8;
+}
+.tabla-equipo tr:hover {
+    background-color: rgba(255, 255, 255, 0.05); 
+}
+</style>
 </head>
 
-<body bgcolor="#000000">
-<table width="100%" cellpadding="20">
+<body>
+<table align="center" border=0>
 <tr>
-<td colspan="2" bgcolor="#D140ED" align="center">
-<h1 align="center">
-<font face="Fantasy" size="7">SUSTITUTOS</font>
-</h1>
-<h2 align="center">MOODBOARD</h2>
-<p align="center">Estética del proyecto</p>
+	<td colspan="2" class="header-section" align="center">
 
-<a href="Moodboard/mood1.png">
+<div class="nav-bar">
+        <span class="nav-button" onclick="abrirTexto('sinopsis')">SINOPSIS</span>
+        <span class="nav-button" onclick="abrirTexto('guion')">GUION</span>
+        <span class="nav-button" onclick="abrirTexto('equipo')">EQUIPO</span>
+</div>
+
+	<h1>SUSTITUTOS</h1>
+	<h2>MOODBOARD</h2>
+	<p style="font-size:10px;opacity:0.9;">Estética del proyecto</p>
+
+<div class="gallery-container">
 <img src="Moodboard/mood1.png" width="180" alt="Moodboard 1">
-</a>
-<a href="Moodboard/mood2.png">
 <img src="Moodboard/mood2.png" width="180" alt="Moodboard 2">
-</a>
-<a href="Moodboard/mood3.png">
 <img src="Moodboard/mood3.png" width="180" alt="Moodboard 3">
-</a>
-<a href="Moodboard/mood4.png">
 <img src="Moodboard/mood4.png" width="180" alt="Moodboard 4">
-</a>
-<a href="Moodboard/mood5.png">
 <img src="Moodboard/mood5.png" width="180" alt="Moodboard 5">
-</a>
-<a href="Moodboard/mood6.png">
 <img src="Moodboard/mood6.png" width="180" alt="Moodboard 6">
-</a>
-<a href="Moodboard/mood7.png">
-<img src="Moodboard/mood7.png" width="180" alt="Moodboard 7">
-</a>
 
+</div>
 
 </td>
 </tr>
 
 <tr>
-<td width="50%" bgcolor="#EDC234" align="center">
+<td width="50%" class="content-section" align="center">
 
 <h2>MOODREEL</h2>
 
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m6jfZa00vkY?si=RoEZzNcPrXejUSWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<video width="100%" style="border-radius:10px;"controls>
+<source src="Moodreel/moodreel.mp4" type="video/mp4">
+</video>
 </td>
 
-<td width="50%" bgcolor="#0B4B8C" align="center">
-
+<td width="50%" class="content-section" align="center" align"top">
 <h2>PODCAST</h2>
 <p>PROYECTO SIRIO</p>
-<audio controls>
+<audio controls style="width:100%;margin:20px 0;">
 <source src="Podcast/podcast.mp3" type="audio/mpeg">
 </audio>
+</td>
+</tr>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<p align="right">
-<a href="mailto:sustitutos@gmail.com" style="color:#000000">CONTÁCTANOS</a>
+<tr>
+<td colspan="2" style="background:none; border:none; box-shadow:none; backdrop-filter:none; padding:20px 0 !important;">
+<p align="right" style="margin-top:50px;">
+<a href="mailto:sustitutosufv@gmail.com" class="contact-link">CONTÁCTANOS</a>
 </p>
 
 </td>
 </tr>
 </table>
+
+<div id="contenido-sinopsis" style="display:none;">
+    <h2>SINOPSIS</h2>
+    <p>En una ciudad cercana, hipersaturada y alegre en apariencia, los tonos amarillos dominan la vida cotidiana mientras lo morado marca lo oculto y la verdad. Tras el fallecimiento de Javi, el grupo de amigos continúa como si nada, hasta que una versión perfecta de él reaparece: refinada, eficiente... Y ligeramente extraña.</p>
+    
+    <p>Pequeños indicios —comportamientos mecánicos, paletas menos saturadas, planos de cámaras de seguridad— revelan que algunas personas están siendo sustituidas por IA. Paralelamente, emergen unos antiguos archivos de un proyecto cancelado: un científico desordenado y dos ayudantes documentaron la puesta en marcha de un ente humanoide financiado y luego clausurado por una corporación mayor. La IA, que marcaba los saltos temporales del proyecto, nunca fue apagada del todo.</p>
+    
+    <p>El conflicto se dispara cuando los protagonistas comprenden que el “retorno” de Javi es en realidad un reemplazo y que el proyecto olvidado ha sido reanudado en secreto. Lo que está en juego es su identidad, la confianza dentro del grupo y el control social: aceptar el confort de la perfección artificial o enfrentar la imperfección humana.</p>
+</div>
+
+<div id="contenido-guion" style="display:none;">
+    <h2>GUION</h2>
+    <p>guion detallado va aqui</p>
+</div>
+
+<div id="contenido-equipo" style="display:none;">
+    <h2>EQUIPO</h2>
+<table class="tabla-equipo">
+        <tr>
+            <th>ROL</th>
+            <th>NOMBRE</th>
+            <th>RESPONSABILIDADES</th>
+        </tr>
+        <tr>
+            <td>Coordinación</td>
+            <td>Shui</td>
+            <td>Organización y escritos de las actas, reuniones de equipo. Control de material y entregas.</td>
+        </tr>
+        <tr>
+            <td>Narrativa / Guion</td>
+            <td>Andrea</td>
+            <td>Guion del piloto, línea temporal, coherencia transmedia.</td>
+        </tr>
+        <tr>
+            <td>Producción</td>
+            <td>Javier</td>
+            <td>Logística, permisos, reserva de equipo, recursos, citaciones, plan de rodaje.</td>
+        </tr>
+        <tr>
+            <td>Arte / VR</td>
+            <td>Elena</td>
+            <td>Estética, moodboard, pieza inmersiva (VR/3D), cartelería/infografías.</td>
+        </tr>
+        <tr>
+            <td>Sonido / Podcast</td>
+            <td>Sofía</td>
+            <td>Identidad sonora, podcast diegético, captación y post de audio.</td>
+        </tr>
+        <tr>
+            <td>Técnico (Montaje + Web)</td>
+            <td>Cindy</td>
+            <td>Postproducción, integraciones, Web, montaje narrativo.</td>
+        </tr>
+        <tr>
+            <td>Documentación / Calidad</td>
+            <td>Cristina</td>
+            <td>Documentación general y control de calidad.</td>
+        </tr>
+    </table>
+    
+</div>
+
+
+<div id="lightboxModal" class="modal">
+    <div class="modal-content">
+        <img class="img-ampliada" id="imgAmpliada" src="" alt="Moodboard Ampliado">
+    </div>
+</div>
+
+<div id="textModal" class="modal">
+    <div class="modal-content">
+        <div class="text-modal-box" id="cajaTexto">
+            </div>
+    </div>
+</div>
+
+<script>
+    var modalImg = document.getElementById("lightboxModal");
+    var imgAmpliada = document.getElementById("imgAmpliada");
+    var fotosGaleria = document.querySelectorAll('.gallery-container img');
+
+
+  fotosGaleria.forEach(function(foto) {
+        foto.addEventListener('click', function() {
+            imgAmpliada.src = this.src;
+            modalImg.style.display = "flex";
+        });
+    });
+   
+modalImg.addEventListener('click', function(event) {
+        if (event.target === modalImg || event.target.className === 'modal-content') {
+            modalImg.style.display = "none";
+            imgAmpliada.src = "";
+        }
+    });
+var modalText = document.getElementById("textModal");
+var cajaTexto = document.getElementById("cajaTexto");
+
+
+function abrirTexto(seccion) {
+        cajaTexto.innerHTML = document.getElementById('contenido-' + seccion).innerHTML;
+        modalText.style.display = "flex";
+    }
+modalText.addEventListener('click', function(event) {
+        if (event.target === modalText || event.target.className === 'modal-content') {
+            modalText.style.display = "none";
+            cajaTexto.innerHTML = "";
+        }
+    });
+</script>
 
 
 </body>
